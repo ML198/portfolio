@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <div class="profile-name">Mingrui Li</div>
+        <div class="profile-title">MPH Biostatistics<br>Emory University</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-btn" data-page="index.html">
+          <i class="fas fa-house"></i> Home
+        </a>
+        <a href="background.html" class="nav-btn" data-page="background.html">
+          <i class="fas fa-file-lines"></i> CV
+        </a>
+        <a href="projects.html" class="nav-btn" data-page="projects.html">
+          <i class="fas fa-folder-open"></i> Projects
+        </a>
+      </nav>
+
+      <div class="sidebar-social">
+        <a href="https://www.linkedin.com/in/mingrui--li/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/ML198" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:mingrui.li20@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span>mingrui.li20@gmail.com</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-intro">
+        <h1>Projects</h1>
+        <p class="subtitle">Research and data science work in biostatistics &amp; bioinformatics</p>
+      </div>
+
+      <div class="project-list">
+
+        <div class="project-item">
+          <h3>Age Effect Explorer: Interactive Transcriptomics Browser</h3>
+          <p>
+            An interactive R Shiny application for exploring tissue-specific age- and sex-associated gene
+            expression changes across 54 human tissues using GTEx v10 bulk RNA-seq data, applying
+            multivariable linear regression and FDR correction across thousands of genes.
+            Co-first-author publication in <em>Bioinformatics Advances</em> (2026).
+          </p>
+          <span class="project-tag">R &middot; Shiny &middot; SQL &middot; Linear Regression &middot; FDR Correction</span>
+        </div>
+
+        <div class="project-item">
+          <h3>EEG Biomarker Validation in Epilepsy Drug Trials</h3>
+          <p>
+            Analyzed multi-center epilepsy trial data to compare seizure-free survival across treatment arms
+            and evaluate EEG spike activity as a predictive biomarker, using survival analysis, Cox
+            proportional hazards modeling, and diagnostic accuracy metrics in SAS.
+          </p>
+          <span class="project-tag">SAS &middot; R &middot; Survival Analysis &middot; Cox PH &middot; Biomarker Validation</span>
+        </div>
+
+        <div class="project-item">
+          <h3>Urban Wild Bee Resistome Analysis</h3>
+          <p>
+            Built a complete bioinformatics pipeline integrating four ARG databases (CARD, RGI, Resfams,
+            SARG) to identify 1,841 high-confidence antibiotic resistance genes across urban wild bee gut
+            microbiomes, characterizing horizontal gene transfer risk and environmental contamination patterns.
+          </p>
+          <span class="project-tag">Bioinformatics &middot; Metagenomics &middot; Pipeline Development &middot; Diversity Analysis</span>
+        </div>
+
+        <div class="project-item">
+          <h3>Reproducible Health Insurance Data Analysis</h3>
+          <p>
+            Developed an end-to-end reproducible analysis pipeline for a real-world health insurance dataset,
+            demonstrating industry best practices including Docker containerization, Makefile automation,
+            R Markdown reporting, and version control.
+          </p>
+          <span class="project-tag">R &middot; Docker &middot; Makefile &middot; R Markdown &middot; Reproducible Research</span>
+        </div>
+
+        <div class="project-item">
+          <h3>Oncology Biomarker Validation</h3>
+          <p>
+            Engineered a Random Forest classifier achieving greater than 90% AUC for predicting treatment
+            response in oncology patients, using PCA to reduce over 300 clinical and molecular features and
+            supporting weekly clinical team reporting.
+          </p>
+          <span class="project-tag">Python &middot; R &middot; Random Forest &middot; PCA &middot; Cross-Validation</span>
+        </div>
+
+        <div class="project-item">
+          <h3>Environmental Resistance Gene Forecasting</h3>
+          <p>
+            Applied LSTM time series modeling to forecast antibiotic resistance gene prevalence under varying
+            pesticide exposure scenarios, and built an XGBoost classifier (89% accuracy) to predict resistance
+            risk from microbial and land-use features.
+          </p>
+          <span class="project-tag">Python &middot; LSTM &middot; XGBoost &middot; Time Series &middot; Environmental Health</span>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    (function () {
+      var page = window.location.pathname.split('/').pop() || 'index.html';
+      if (!page || page === '') page = 'index.html';
+      document.querySelectorAll('.nav-btn').forEach(function (link) {
+        if (link.getAttribute('data-page') === page) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

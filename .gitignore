@@ -1,0 +1,46 @@
+# R-specific files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# RStudio files
+.rstudio
+.Rbuildignore
+
+# Generated website
+_site/
+_cache/
+*_files/
+
+# OS files
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+*.knit.md
+*.utf8.md
+
+# Temporary files
+*.tmp
+*~
+
+# Environment files
+.env
+.Renviron
+
+# Package files
+rsconnect/
+
+# Node modules (if using any JS tools)
+node_modules/
+.positai

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mingrui Li</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <div class="profile-name">Mingrui Li</div>
+        <div class="profile-title">MPH Biostatistics<br>Emory University</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-btn" data-page="index.html">
+          <i class="fas fa-house"></i> Home
+        </a>
+        <a href="background.html" class="nav-btn" data-page="background.html">
+          <i class="fas fa-file-lines"></i> CV
+        </a>
+        <a href="projects.html" class="nav-btn" data-page="projects.html">
+          <i class="fas fa-folder-open"></i> Projects
+        </a>
+      </nav>
+
+      <div class="sidebar-social">
+        <a href="https://www.linkedin.com/in/mingrui--li/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/ML198" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:mingrui.li20@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span>mingrui.li20@gmail.com</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-intro">
+        <h1>Mingrui Li</h1>
+        <p class="subtitle">MPH Biostatistics &middot; Emory University</p>
+      </div>
+
+      <div class="bio-section">
+        <h2>About Me</h2>
+        <p>
+          I am a second-year Master of Public Health student in Biostatistics at Emory University's Rollins
+          School of Public Health, graduating in May 2026. My work sits at the intersection of statistical
+          methodology and biological data — translating complex datasets into interpretable, reproducible findings
+          that can inform real-world decisions.
+        </p>
+        <p>
+          I have hands-on experience in large-scale transcriptomics, clinical trial analysis, and bioinformatics
+          pipeline development. I enjoy building tools that make statistical results accessible: from interactive
+          Shiny dashboards to end-to-end reproducible workflows using Docker and Make.
+        </p>
+        <p>
+          I am actively seeking full-time roles in biostatistics, data science, or statistical programming
+          starting Summer 2026.
+        </p>
+
+        <h2>Background</h2>
+        <p>
+          <strong>Master of Public Health, Biostatistics</strong><br>
+          Emory University, Rollins School of Public Health &mdash; Aug 2024 &ndash; May 2026<br>
+          <span style="color:#94a3b8; font-size:0.85rem;">Applied Linear Models &middot; Statistical Inference &middot; Machine Learning &middot; SAS &amp; R Programming</span>
+        </p>
+        <p>
+          <strong>Bachelor of Science, Bioinformatics</strong><br>
+          Xi'an Jiaotong–Liverpool University &mdash; Aug 2020 &ndash; May 2024<br>
+          <span style="color:#94a3b8; font-size:0.85rem;">Genomics &amp; Proteomics &middot; Computational Biology &middot; Molecular Genetics &middot; Probability Theory</span>
+        </p>
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-tags">
+          <span class="tag">R</span>
+          <span class="tag">Python</span>
+          <span class="tag">SAS</span>
+          <span class="tag">SQL</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">Linux / Bash</span>
+          <span class="tag">R Shiny</span>
+          <span class="tag">ggplot2</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git / GitHub</span>
+          <span class="tag">Survival Analysis</span>
+          <span class="tag">Linear Regression</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">FDR Correction</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Jupyter</span>
+          <span class="tag">AWS / Azure</span>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    (function () {
+      var page = window.location.pathname.split('/').pop() || 'index.html';
+      if (!page || page === '') page = 'index.html';
+      document.querySelectorAll('.nav-btn').forEach(function (link) {
+        if (link.getAttribute('data-page') === page) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
