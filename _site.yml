@@ -1,0 +1,9 @@
+name: "Mingrui Li"
+title: "Mingrui Li | Biostatistics & Data Science"
+description: "Professional portfolio of Mingrui Li, Biostatistics Master's student at Emory University"
+output_dir: "_site"
+output:
+  html_document:
+    theme: null
+    template: template.html
+    self_contained: false

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$title$</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <div class="profile-name">Mingrui Li</div>
+        <div class="profile-title">MPH Biostatistics<br>Emory University</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-btn" data-page="index.html">
+          <i class="fas fa-house"></i> Home
+        </a>
+        <a href="background.html" class="nav-btn" data-page="background.html">
+          <i class="fas fa-file-lines"></i> CV
+        </a>
+        <a href="projects.html" class="nav-btn" data-page="projects.html">
+          <i class="fas fa-folder-open"></i> Projects
+        </a>
+      </nav>
+
+      <div class="sidebar-social">
+        <a href="https://www.linkedin.com/in/mingrui--li/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/ML198" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:mingrui.li20@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span>mingrui.li20@gmail.com</span>
+        </a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      $body$
+    </main>
+
+  </div>
+
+  <script>
+    (function () {
+      var page = window.location.pathname.split('/').pop() || 'index.html';
+      if (!page || page === '') page = 'index.html';
+      document.querySelectorAll('.nav-btn').forEach(function (link) {
+        if (link.getAttribute('data-page') === page) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
