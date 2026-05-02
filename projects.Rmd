@@ -11,7 +11,11 @@ title: "Projects"
 <div class="project-list">
 
   <div class="project-item">
-    <h3>Age Effect Explorer: Interactive Transcriptomics Browser</h3>
+    <h3>
+      <a href="https://github.com/ML198/Age-Effect-Explorer" target="_blank">
+        Age Effect Explorer: Interactive Transcriptomics Browser
+      </a>
+    </h3>
     <p>
       An interactive R Shiny application for exploring tissue-specific age- and sex-associated gene
       expression changes across 54 human tissues using GTEx v10 bulk RNA-seq data, applying
@@ -22,6 +26,21 @@ title: "Projects"
   </div>
 
   <div class="project-item">
+    <h3>
+      <a href="https://github.com/ML198/TNBC-ST-dashboard" target="_blank">
+        TNBC Spatial Transcriptomics: Tumor Biomarker Classification Pipeline
+      </a>
+    </h3>
+    <p>
+      An ML classification pipeline in R predicting tumor regions from spatial gene expression data
+      across 94 triple-negative breast cancer tissue samples (~9,000 spots &times; 14,019 features),
+      achieving AUC = 0.89 via grouped 5-fold cross-validation, with SHAP explainability to identify
+      key predictive biomarkers and a fully reproducible pipeline packaged in Docker, renv, and Makefile.
+    </p>
+    <span class="project-tag">R &middot; Spatial Transcriptomics &middot; Machine Learning &middot; SHAP &middot; Docker &middot; Reproducible Pipeline</span>
+  </div>
+
+  <div class="project-item">
     <h3>EEG Biomarker Validation in Epilepsy Drug Trials</h3>
     <p>
       Analyzed multi-center epilepsy trial data to compare seizure-free survival across treatment arms
@@ -29,46 +48,6 @@ title: "Projects"
       proportional hazards modeling, and diagnostic accuracy metrics in SAS.
     </p>
     <span class="project-tag">SAS &middot; R &middot; Survival Analysis &middot; Cox PH &middot; Biomarker Validation</span>
-  </div>
-
-  <div class="project-item">
-    <h3>Urban Wild Bee Resistome Analysis</h3>
-    <p>
-      Built a complete bioinformatics pipeline integrating four ARG databases (CARD, RGI, Resfams,
-      SARG) to identify 1,841 high-confidence antibiotic resistance genes across urban wild bee gut
-      microbiomes, characterizing horizontal gene transfer risk and environmental contamination patterns.
-    </p>
-    <span class="project-tag">Bioinformatics &middot; Metagenomics &middot; Pipeline Development &middot; Diversity Analysis</span>
-  </div>
-
-  <div class="project-item">
-    <h3>Reproducible Health Insurance Data Analysis</h3>
-    <p>
-      Developed an end-to-end reproducible analysis pipeline for a real-world health insurance dataset,
-      demonstrating industry best practices including Docker containerization, Makefile automation,
-      R Markdown reporting, and version control.
-    </p>
-    <span class="project-tag">R &middot; Docker &middot; Makefile &middot; R Markdown &middot; Reproducible Research</span>
-  </div>
-
-  <div class="project-item">
-    <h3>Oncology Biomarker Validation</h3>
-    <p>
-      Engineered a Random Forest classifier achieving greater than 90% AUC for predicting treatment
-      response in oncology patients, using PCA to reduce over 300 clinical and molecular features and
-      supporting weekly clinical team reporting.
-    </p>
-    <span class="project-tag">Python &middot; R &middot; Random Forest &middot; PCA &middot; Cross-Validation</span>
-  </div>
-
-  <div class="project-item">
-    <h3>Environmental Resistance Gene Forecasting</h3>
-    <p>
-      Applied LSTM time series modeling to forecast antibiotic resistance gene prevalence under varying
-      pesticide exposure scenarios, and built an XGBoost classifier (89% accuracy) to predict resistance
-      risk from microbial and land-use features.
-    </p>
-    <span class="project-tag">Python &middot; LSTM &middot; XGBoost &middot; Time Series &middot; Environmental Health</span>
   </div>
 
 </div>

@@ -254,6 +254,18 @@ a:hover {
   font-weight: 500;
 }
 
+/* Project title links */
+.project-item h3 a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.project-item h3 a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 /* ── Projects page ───────────────────────────────────────── */
 
 .project-list {
